@@ -278,7 +278,7 @@
   "sourceMap": "27:334:3:-:0;;;82:61;;;;;;;;;;124:10;107:6;;:28;;;;;;;;;;;;;;;;;;27:334;;;;;;",
   "deployedSourceMap": "27:334:3:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;265:93;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;304:4;343:6;;;;;;;;;;;329:20;;:10;:20;;;321:29;;265:93;:::o;7:109:4:-;88:21;103:5;88:21;:::i;:::-;83:3;76:34;66:50;;:::o;122:210::-;209:4;247:2;236:9;232:18;224:26;;260:65;322:1;311:9;307:17;298:6;260:65;:::i;:::-;214:118;;;;:::o;338:90::-;372:7;415:5;408:13;401:21;390:32;;380:48;;;:::o",
   "source": "pragma solidity ^0.8.6;\r\n\r\ncontract Ownable {\r\n    address payable _owner;\r\n\r\n    constructor() {\r\n        _owner = payable(msg.sender);\r\n    }\r\n\r\n    modifier onlyOwner() {\r\n        require(msg.sender == _owner, \"You are not the owner\");\r\n        _;\r\n    }\r\n\r\n    function isOwner() public view returns(bool) {\r\n        return (msg.sender == _owner);\r\n    }\r\n}",
-  "sourcePath": "C:\\Users\\DaviB\\OneDrive\\Desktop\\item_management_front\\contracts\\Ownable.sol",
+  "sourcePath": "C:\\Users\\DaviB\\OneDrive\\Desktop\\item_manager\\contracts\\Ownable.sol",
   "ast": {
     "absolutePath": "project:/contracts/Ownable.sol",
     "exportedSymbols": {
@@ -778,7 +778,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-04-18T12:50:01.529Z",
+  "updatedAt": "2022-04-18T13:22:22.290Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
